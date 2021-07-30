@@ -33,6 +33,9 @@ header {
     width: 80%;
     display: inline-flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
     align-items: center;
 }
 
