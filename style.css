@@ -78,6 +78,10 @@ nav {
     border-radius: 5px;
 }
 
+.nav-link:active {
+    background-color: #94a2af;
+}
+
 .nav-link:visited {
     color: black;
 }
