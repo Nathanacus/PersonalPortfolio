@@ -23,10 +23,12 @@ function goToTop() {
 // Responsive Nav Bar
 
 function expandNavBar() {
-    let nav = document.getElementsByTagName('nav');
+    let nav = document.getElementByTagName('nav');
     if (nav.class === '') {
         nav.class += 'responsive';
+        console.log('Added responsive class');
     } else {
         nav.class = '';
+        console.log('Removed responsive class');
     }
 }
