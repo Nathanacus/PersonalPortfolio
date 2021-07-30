@@ -4,13 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 html {
     background-color: lightgrey;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
 }
 
 h1 {
@@ -41,6 +41,10 @@ strong {
     color: black;
     background-color: lightslategray;
     border-radius: 5px;
+}
+
+#buttonToTop:hover {
+    background-color: lightgray
 }
 
 /* Responsive Sizing and Grid Formatting */
