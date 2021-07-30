@@ -43,23 +43,25 @@ nav {
     align-items: center;
 }
 
-nav h1 {
+.nav-title, .nav-title:hover, .nav-title:visited {
     flex-grow: 1;
+    color: black;
+    text-decoration: none;
 }
 
-nav a {
+.nav-link {
     color: black;
     text-align: center;
     text-decoration: none;
     padding: 5px 15px;
 }
 
-nav a:hover {
+.nav-link:hover {
     background-color: lightslategray;
     border-radius: 5px;
 }
 
-nav a:visited {
+.nav-link:visited {
     color: black;
 }
 
