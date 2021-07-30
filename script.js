@@ -18,3 +18,15 @@ function goToTop() {
     document.body.scrollTop = 0;            // Safari
     document.documentElement.scrollTop = 0; // Chrome, Firefox, IE, Opera
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// Responsive Nav Bar
+
+function expandNavBar() {
+    let nav = document.getElementsByTagName('nav');
+    if (nav.class === '') {
+        nav.class += 'responsive';
+    } else {
+        nav.class = '';
+    }
+}
