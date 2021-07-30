@@ -11,6 +11,9 @@
 
 html {
     background-color: lightgrey;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 h1 {
@@ -44,7 +47,7 @@ strong {
 }
 
 #buttonToTop:hover {
-    background-color: lightgray
+    background-color: #94a2af;
 }
 
 /* Responsive Sizing and Grid Formatting */
