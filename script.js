@@ -18,17 +18,3 @@ function goToTop() {
     document.body.scrollTop = 0;            // Safari
     document.documentElement.scrollTop = 0; // Chrome, Firefox, IE, Opera
 }
-
-/////////////////////////////////////////////////////////////////////////////////////////////////
-// Responsive Nav Bar
-
-function expandNavBar() {
-    let navbar = document.getElementById('navbar');
-    if (navbar.class === '') {
-        navbar.class += 'responsive';
-        console.log('Added responsive class');
-    } else {
-        navbar.class = '';
-        console.log('Removed responsive class');
-    }
-}
