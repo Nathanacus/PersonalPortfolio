@@ -6,7 +6,7 @@ const buttonToTop = document.getElementById('buttonToTop');
 
 // Listens for window scrolling
 window.onscroll = function() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
         buttonToTop.style.display = 'block';
     } else {
         buttonToTop.style.display = 'none';
