@@ -31,13 +31,19 @@ strong {
 
 header {
     width: 80%;
-    margin: auto;
-    display: inline-flex;
+    margin: 25px auto;
+}
+
+nav {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
     align-items: center;
 }
 
-header h1 {
+nav h1 {
     flex-grow: 1;
 }
 
@@ -59,7 +65,7 @@ nav a:visited {
 
 main {
     width: 80%;
-    margin: auto;
+    margin: 25px auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 15px 15px;
@@ -68,7 +74,7 @@ main {
 
 footer {
     width: 80%;
-    margin: auto;
+    margin: 25px auto;
     align-items: center;
 }
 
@@ -81,17 +87,17 @@ footer p {
 @media only screen and (max-width: 992px) {
 
     header {
-        width: 100%;
+        width: 90%;
     }
 
     main {
-        width: 100%;
+        width: 90%;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px 10px;
     }
 
     footer {
-        width: 100%;
+        width: 90%;
     }
 
 }
