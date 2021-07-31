@@ -21,17 +21,3 @@ function goToTop() {
     document.body.scrollTop = 0;            // Safari
     document.documentElement.scrollTop = 0; // Chrome, Firefox, IE, Opera
 }
-
-/////////////////////////////////////////////////////////////////////////////////////////////////
-// Responsive Navbar Dropdown
-
-// Toggle navbar display status
-function toggleNavDropdown() {
-    let items = document.getElementById('nav-dropdown-items');
-    if (items.style.display === 'none') {
-        items.style.display = 'block';
-    } else {
-        items.style.display = 'none';
-    }
-
-}
