@@ -159,11 +159,17 @@ article, section {
     grid-column: 1 / span 1;
 }
 
-#projects {
+.projects {
     display: flex;
     flex-wrap: wrap;
     place-content: start center;
     place-items: center;
+}
+
+.projects img {
+    min-width: 5rem;
+    max-width: 10rem;
+    height: auto;
 }
 
 footer {
