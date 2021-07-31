@@ -69,22 +69,25 @@ Popover Text */
     display: inline-block;
 }
 
-.popover-content {
+/* popover content box with text */
+#popover-content {
     visibility: hidden;
     position: absolute;
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    width: 6rem;
-    margin-left: -3rem;
+    width: 16rem;
+    margin-left: -8rem;
     padding: 0.5rem 0rem;
     color: black;
+    font-size: 0.75rem;
     text-align: center;
     background-color: lightslategray;
     border-radius: 0.5rem;
 }
 
-.popover-content::after {
+/* add arrow below popover content box */
+#popover-content::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -95,6 +98,7 @@ Popover Text */
     border-color: lightslategray transparent transparent transparent;
 }
 
+/* toggled by script to show or hide content */
 .popover .show-content {
     visibility: visible;
 }

@@ -23,23 +23,29 @@ function goToTop() {
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-// Toggle Responsive Navbar Dropdown Menu
+// Functions to Toggle Content
 
-// display dropdown menu
+// display navbar dropdown menu
 function toggleNavDropdown() {
     document.getElementById('nav-dropdown-items').style.display = 'block';
 }
 
-// close dropdown menu when user clicks elsewhere
+// display popover content
+function togglePopover() {
+    document.getElementById('popover-content').style.visibility = 'visible';
+}
+
+// onclick listener to toggle off
 window.onclick = function(event) {
+    
+    // hide navbar dropdown menu
     if (!event.target.matches('.nav-dropdown-button')) {
         document.getElementById('nav-dropdown-items').style.display = 'none';
     }
-}
+    
+    // hide popover content
+    else if (!event.target.matches('.popover')) {
+        document.getElementById('popover-content').style.visibility = 'hidden';
+    }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////
-// Toggle Popover
-
-function togglePopover() {
-    document.getElementById('popover-content').classList.toggle('show-content');
 }
