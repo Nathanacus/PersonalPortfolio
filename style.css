@@ -146,6 +146,19 @@ main {
     place-items: start center;
 }
 
+figure {
+    grid-column: 1 / span 1;
+}
+
+article, section {
+    grid-column: 1 / span 1;
+}
+
+.about {background-color: blue;}
+.projects {background-color: red;}
+.skills {background-color: green;}
+.contact {background-color: yellow;}
+
 footer {
     width: 95%;
     margin: 1.5rem auto;
@@ -199,6 +212,14 @@ Tablet Sizing */
         grid-template-columns: repeat(3, 1fr);
         gap: 0.75rem 0.75rem;
     }
+    
+    figure {
+        grid-column: 1 / span 1;
+    }
+
+    article, section {
+        grid-column: 2 / span 2;
+    }
 
     footer {
         width: 85%;
@@ -221,6 +242,14 @@ Large Screen Sizing */
         width: 75%;
         grid-template-columns: repeat(6, 1fr);
         gap: 1rem 1rem;
+    }
+    
+    figure {
+        grid-column: 2 / span 1;
+    }
+
+    article, section {
+        grid-column: 3 / span 3;
     }
 
     footer {
