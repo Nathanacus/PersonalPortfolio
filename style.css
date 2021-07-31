@@ -175,6 +175,7 @@ Tablet Sizing */
 
     /* display regular navbar on larger screens */
     .nav-link {
+        display: block;
         color: black;
         text-align: center;
         text-decoration: none;
