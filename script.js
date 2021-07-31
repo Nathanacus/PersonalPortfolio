@@ -44,7 +44,7 @@ window.onclick = function(event) {
     }
     
     // hide popover content
-    if (!event.target.matches('.popover')) {
+    if (!event.target.matches('.popover-trigger')) {
         if (document.getElementById('popover-content').style.visibility === 'visible') {
             document.getElementById('popover-content').style.visibility = 'hidden';
         }

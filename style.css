@@ -70,7 +70,7 @@ Popover Text */
     cursor: pointer;
 }
 
-.popover sup {
+.popover-trigger {
     color: blue;
     text-decoration: underline;
 }
