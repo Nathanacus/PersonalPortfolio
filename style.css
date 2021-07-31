@@ -102,11 +102,6 @@ nav {
     color: black;
 }
 
-/* open dropdown menu when hovered over button */
-.nav-dropdown:hover .nav-dropdown-items {
-    display: block;
-}
-
 /* format dropdown menu */
 .nav-dropdown-items {
     display: none;
