@@ -27,7 +27,7 @@ function goToTop() {
 
 // Toggle navbar display status
 function toggleNavDropdown() {
-    let items = document.getElementById('navbar-dropdown-items');
+    let items = document.getElementById('nav-dropdown-items');
     if (items.style.display === 'none') {
         items.style.display = 'block';
     } else {
