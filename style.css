@@ -73,16 +73,27 @@ nav {
     padding: 5px 15px;
 }
 
-.nav-link:hover {
+.nav-dropdown {
+    display: none;
+}
+
+.nav-dropdown-button {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.nav-link:hover, .nav-dropdown-button:hover {
     background-color: lightslategray;
     border-radius: 5px;
 }
 
-.nav-link:active {
+.nav-link:active, .nav-dropdown-button:active {
     background-color: #94a2af;
 }
 
-.nav-link:visited {
+.nav-link:visited, .nav-dropdown-button:visited {
     color: black;
 }
 
@@ -131,6 +142,19 @@ footer p {
 
     header {
         width: 95%;
+    }
+
+    .nav-dropdown {
+        display: inline-block;
+        position: relative;
+    }
+
+    .nav-dropdown-items {
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
     }
 
     main {

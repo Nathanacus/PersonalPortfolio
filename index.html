@@ -29,17 +29,30 @@
         <button onclick='goToTop()' id='buttonToTop' title='Return to Top'>Back to Top</button>
 
         <header>
-            <!-- TO DO -->
-            <!--
-                Add Hamburger Button on Mobile Screens
-            -->
-            <nav id='navbar'>
+
+            <nav>
+
                 <a class='nav-title' href=''><h1><strong>Nathan Foos</strong></h1></a>
+
+                <!-- Regular Navbar Items -->
                 <a class='nav-link' href='#'>About</a>
                 <a class='nav-link' href='#'>Projects</a>
                 <a class='nav-link' href='#'>Skills</a>
                 <a class='nav-link' href='#'>Contact</a>
+
+                <!-- Dropdown Navbar for Mobile Screens -->
+                <div class='dropdown'>
+                    <a class='nav-dropdown-button' href='javascript:void(0);'>Menu</a>
+                    <div class='nav-dropdown-items'>
+                        <a class='nav-link' ref='#'>About</a>
+                        <a class='nav-link' ref='#'>Projects</a>
+                        <a class='nav-link' ref='#'>Skills</a>
+                        <a class='nav-link' ref='#'>Contact</a>
+                    </div>
+                </div>
+
             </nav>
+
         </header>
 
         <main>
