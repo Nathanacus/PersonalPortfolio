@@ -207,6 +207,8 @@ main {
 figure {
     margin: 1rem 2rem;
     grid-column: 1 / span 1;
+    align-self: end;
+    text-align: center;
 }
 
 article, section {
