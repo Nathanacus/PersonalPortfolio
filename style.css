@@ -148,24 +148,22 @@ main {
 }
 
 figure {
+    width: 100%;
+    margin: auto;
     grid-column: 1 / span 1;
 }
 
 article, section {
+    width: 100%;
+    margin: auto;
     grid-column: 1 / span 1;
 }
 
 #projects {
     display: flex;
     flex-wrap: wrap;
+    place-content: start center;
     place-items: center;
-}
-
-.a {
-    min-width: 5rem;
-    min-height: 5rem;
-    background-color: red;
-    margin: 1rem;
 }
 
 footer {
@@ -247,20 +245,20 @@ Large Screen Sizing */
         width: 75%;
     }
 
-    /* six column grid on large screens */
+    /* four column grid on large screens */
     main {
         width: 75%;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(8, 1fr);
     }
     
-    /* profile picture takes up column 2 */
+    /* profile picture takes up column 1 */
     figure {
-        grid-column: 2 / span 1;
+        grid-column: 1 / span 1;
     }
 
-    /* content takes up columns 3-5 */
+    /* content takes up columns 2-4 */
     article, section {
-        grid-column: 3 / span 3;
+        grid-column: 2 / span 3;
     }
 
     footer {
