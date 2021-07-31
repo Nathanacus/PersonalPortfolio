@@ -70,6 +70,11 @@ Popover Text */
     cursor: pointer;
 }
 
+.popover sup {
+    color: blue;
+    text-decoration: underline;
+}
+
 /* popover content box with text */
 #popover-content {
     visibility: hidden;
