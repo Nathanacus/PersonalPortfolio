@@ -215,7 +215,7 @@ article, section {
     grid-column: 1 / span 1;
 }
 
-.projects, .skills {
+.treasure-maps, .skills {
     display: flex;
     flex-wrap: wrap;
     place-content: start center;
