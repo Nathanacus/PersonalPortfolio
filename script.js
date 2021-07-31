@@ -36,3 +36,10 @@ window.onclick = function(event) {
         document.getElementById('nav-dropdown-items').style.display = 'none';
     }
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// Toggle Popover
+
+function togglePopover() {
+    document.getElementById('popover-content').classList.toggle('show-content');
+}
