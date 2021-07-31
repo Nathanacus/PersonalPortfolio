@@ -67,6 +67,7 @@ Popover Text */
 .popover {
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 /* popover content box with text */
@@ -96,11 +97,6 @@ Popover Text */
     border-width: 0.25rem;
     border-style: solid;
     border-color: lightslategray transparent transparent transparent;
-}
-
-/* toggled by script to show or hide content */
-.popover .show-content {
-    visibility: visible;
 }
 
 /*

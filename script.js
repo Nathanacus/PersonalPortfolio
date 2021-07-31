@@ -41,11 +41,13 @@ window.onclick = function(event) {
     // hide navbar dropdown menu
     if (!event.target.matches('.nav-dropdown-button')) {
         document.getElementById('nav-dropdown-items').style.display = 'none';
+        console.log('dropdown');
     }
     
     // hide popover content
     else if (!event.target.matches('.popover')) {
         document.getElementById('popover-content').style.visibility = 'hidden';
+        console.log('popover');
     }
 
 }
