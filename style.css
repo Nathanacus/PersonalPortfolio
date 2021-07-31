@@ -117,10 +117,29 @@ footer p {
     text-align: center;
 }
 
+/* Tablet */
+
+@media only screen and (max-device-width: 992px) {
+
+    header {
+        width: 85%;
+    }
+
+    main {
+        width: 85%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px 10px;
+    }
+
+    footer {
+        width: 85%;
+    }
+
+}
 
 /* Mobile */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-device-width: 600px) {
 
     header {
         width: 95%;
