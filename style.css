@@ -1,4 +1,6 @@
-/* Default Styling */
+/*
+/////////////////////////////////////////////////////////////////////////////////////
+Default Styling */
 
 * {
     margin: 0;
@@ -27,7 +29,9 @@ strong {
     font-weight: 700;
 }
 
-/* Return to Top Button */
+/*
+/////////////////////////////////////////////////////////////////////////////////////
+Return to Top Button */
 
 #buttonToTop {
     display: none;
@@ -47,41 +51,47 @@ strong {
     background-color: #94a2af;
 }
 
-/* Mobile First Formatting */
+/*
+/////////////////////////////////////////////////////////////////////////////////////
+Mobile First Formatting */
 
 header {
     width: 95%;
     margin: 1.5rem auto;
 }
 
+/* set nav element as a flexbox */
 nav {
     display: flex;
     flex-wrap: wrap;
     place-items: center;
 }
 
+/* formatting for title link in navbar */
 .nav-title, .nav-title:hover, .nav-title:visited {
     flex-grow: 1;
     color: black;
     text-decoration: none;
 }
 
+/* show dropdown navbar on small screens */
 .nav-dropdown {
     display: inline-block;
     position: relative;
     border-radius: 0.5rem;
 }
 
+/* button to expand dropdown menu */
 .nav-dropdown-button {
     color: black;
     text-align: center;
     text-decoration: none;
-    padding: 5px 15px;
+    padding: 0.5rem 1rem;
 }
 
 .nav-dropdown-button:hover {
     background-color: lightslategray;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 
 .nav-dropdown-button:active {
@@ -92,10 +102,12 @@ nav {
     color: black;
 }
 
+/* open dropdown menu when hovered over button */
 .nav-dropdown:hover .nav-dropdown-items {
     display: block;
 }
 
+/* format dropdown menu */
 .nav-dropdown-items {
     display: none;
     position: absolute;
@@ -122,16 +134,17 @@ nav {
     color: black;
 }
 
+/* hide regular navbar on small screens */
 .nav-link {
     display: none;
 }
 
+/* single column grid on small screens */
 main {
     width: 95%;
     margin: 1.5rem auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1rem 1rem;
     place-items: start center;
 }
 
@@ -145,7 +158,9 @@ footer p {
     text-align: center;
 }
 
-/* Tablet Sizing */
+/*
+/////////////////////////////////////////////////////////////////////////////////////
+Tablet Sizing */
 
 @media only screen and (min-width: 48rem) {
 
@@ -153,20 +168,22 @@ footer p {
         width: 85%;
     }
 
+    /* hide dropdown navbar on larger screens */
     .nav-dropdown {
         display: none;
     }
 
+    /* display regular navbar on larger screens */
     .nav-link {
         color: black;
         text-align: center;
         text-decoration: none;
-        padding: 5px 15px;
+        padding: 0.5rem 1rem;
     }
 
     .nav-link:hover {
         background-color: lightslategray;
-        border-radius: 5px;
+        border-radius: 0.5rem;
     }
 
     .nav-link:active {
@@ -177,6 +194,7 @@ footer p {
         color: black;
     }
 
+    /* three column grid on medium screens */
     main {
         width: 85%;
         grid-template-columns: repeat(3, 1fr);
@@ -189,7 +207,9 @@ footer p {
 
 }
 
-/* Large Screen Sizing */
+/*
+/////////////////////////////////////////////////////////////////////////////////////
+Large Screen Sizing */
 
 @media only screen and (min-width: 62rem) {
 
@@ -197,8 +217,11 @@ footer p {
         width: 75%;
     }
 
+    /* six column grid on large screens */
     main {
         width: 75%;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem 1rem;
     }
 
     footer {
