@@ -43,6 +43,9 @@ Return to Top Button */
     border: none;
     outline: none;
     color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
     background-color: lightslategray;
     border-radius: 0.5rem;
 }
@@ -104,7 +107,7 @@ nav {
 
 /* format dropdown menu */
 .nav-dropdown-items {
-    display: none;
+    display: none;  /* initially hidden */
     position: absolute;
     right: 0rem;
     background-color: #94a2af;
