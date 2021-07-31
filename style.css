@@ -162,10 +162,6 @@ footer p {
         z-index: 1;
     }
 
-    .nav-dropdown-button:hover .nav-dropdown-items {
-        display: block;
-    }
-
     .nav-dropdown-items a {
         color: black;
         text-align: center;
